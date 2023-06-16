@@ -1,4 +1,4 @@
-package com.dicoding.capstone.dokter
+package com.dicoding.capstone.ui.dokter
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

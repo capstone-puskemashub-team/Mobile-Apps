@@ -31,4 +31,8 @@
     <string name="change">Change Password</string>
     <string name="mail">Message</string>
     <string name="about">About</string>
+    <string name="daftardokter">Daftar Dokter</string>
+    <string name="pushub">"PusHub "</string>
+    <string name="tambah_pasien">Tambah Pasien</string>
+    <string name="masukkan">masukkan data pasien</string>
 </resources>

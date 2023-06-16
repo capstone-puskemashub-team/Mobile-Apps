@@ -1,14 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.pasien.PasienDetailFragment">
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/tvNama"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="Nama" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/tvNIK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NIK" />
+
+    <TextView
+        android:id="@+id/tvJenisKelamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin" />
+
+    <TextView
+        android:id="@+id/tvUmur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Umur" />
+
+    <TextView
+        android:id="@+id/tvBeratBadan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Berat Badan" />
+
+    <TextView
+        android:id="@+id/tvTinggiBadan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tinggi Badan" />
+
+    <TextView
+        android:id="@+id/tvBeratLahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Berat Lahir" />
+
+    <TextView
+        android:id="@+id/tvTinggiLahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tinggi Lahir" />
+
+    <TextView
+        android:id="@+id/tvDiagnosa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diagnosa" />
+
+    <TextView
+        android:id="@+id/tvHasilStunting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil Stunting" />
+
+</LinearLayout>

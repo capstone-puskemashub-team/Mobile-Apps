@@ -4,16 +4,23 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.dicoding.capstone.databinding.FragmentNotificationsBinding
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.dicoding.capstone.PasienAdapter
+import com.dicoding.capstone.model.Pasien
+import com.dicoding.capstone.R
+import com.dicoding.capstone.ui.pasien.tambah.TambahPasienFragment
 
 class PasienFragment : Fragment() {
 
-    private var _binding: FragmentNotificationsBinding? = null
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var btnTambahPasien: Button
+    private lateinit var pasienAdapter: PasienAdapter
 
-    private val binding get() = _binding!!
+    private val pasienList: MutableList<Pasien> = mutableListOf()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -23,18 +30,24 @@ class PasienFragment : Fragment() {
         val pasienViewModel =
             ViewModelProvider(this).get(PasienViewModel::class.java)
 
-        _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        val view = inflater.inflate(R.layout.fragment_pasien, container, false)
+        recyclerView = view.findViewById(R.id.recyclerView)
+        btnTambahPasien = view.findViewById(R.id.btnTambahPasien)
 
-        val textView: TextView = binding.textNotifications
-        pasienViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        pasienAdapter = PasienAdapter(pasienList)
+        recyclerView.adapter = pasienAdapter
+        recyclerView.layoutManager = LinearLayoutManager(context)
+
+        btnTambahPasien.setOnClickListener {
+            val fragment = TambahPasienFragment()
+            val fragmentManager = requireActivity().supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.container,fragment)
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
         }
-        return root
+        return view
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
+
 }

@@ -1,14 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.pasien.tambah.TambahPasienFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            style="@style/TextContent.Tittle"
+            android:text="@string/tambah_pasien"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@color/primaryColor"
+            android:text="@string/masukkan"/>
+
+        <EditText
+            android:id="@+id/et_nama"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="nama"
+            android:layout_marginHorizontal="16dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:background="@drawable/button_edt"
+            android:backgroundTint="@color/backgroundTint"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:layout_marginTop="10dp"
+           />
+
+        <EditText
+            android:id="@+id/et_NIK"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="NIK"
+            android:layout_marginHorizontal="16dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:background="@drawable/button_edt"
+            android:backgroundTint="@color/backgroundTint"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/et_jenisKL"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/button_edt"
+            android:fontFamily="@font/poppinssemibold"
+            android:hint="jenis kelamin"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="10sp"
+            android:padding="16dp"/>
+
+        <EditText
+            android:id="@+id/et_umur"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/button_edt"
+            android:fontFamily="@font/poppinssemibold"
+            android:hint="umur"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="10sp"
+            android:padding="16dp"/>
+
+        <EditText
+            android:id="@+id/et_tempat"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/button_edt"
+            android:fontFamily="@font/poppinssemibold"
+            android:hint="tempat lahir"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="10sp"
+            android:padding="16dp"/>
+
+        <EditText
+            android:id="@+id/et_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/button_edt"
+            android:fontFamily="@font/poppinssemibold"
+            android:hint="tanggal"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="10sp"
+            android:padding="16dp"/>
+
+        <EditText
+            android:id="@+id/et_noHP"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/button_edt"
+            android:fontFamily="@font/poppinssemibold"
+            android:hint="nomor hp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="10sp"
+            android:padding="16dp"/>
+
+        <EditText
+            android:id="@+id/et_bpjs"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/button_edt"
+            android:fontFamily="@font/poppinssemibold"
+            android:hint="nomor bpjs"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="10sp"
+            android:padding="16dp"/>
+
+        <EditText
+            android:id="@+id/et_alergi"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/button_edt"
+            android:fontFamily="@font/poppinssemibold"
+            android:hint="alergi"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="10sp"
+            android:padding="16dp"/>
+
+        <EditText
+            android:id="@+id/et_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/button_edt"
+            android:fontFamily="@font/poppinssemibold"
+            android:hint="alamat"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textSize="10sp"
+            android:padding="16dp"
+            android:inputType="textMultiLine"
+            android:minLines="3"/>
+    </LinearLayout>
+</ScrollView>

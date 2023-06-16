@@ -5,15 +5,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.dicoding.capstone.databinding.FragmentHomeBinding
-import com.dicoding.capstone.ui.login.LoginActivity
+import com.dicoding.capstone.databinding.FragmentMenuBinding
 
 class MenuFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentMenuBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -24,11 +22,21 @@ class MenuFragment : Fragment() {
         val homeViewModel =
             ViewModelProvider(this).get(MenuViewModel::class.java)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentMenuBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
         return root
 
+        binding.dokter.setOnClickListener{
+
+        }
+
+        binding.obat.setOnClickListener{
+
+        }
+
+        binding.vaksin.setOnClickListener{
+
+        }
     }
 
     override fun onDestroyView() {

@@ -15,13 +15,13 @@
         android:id="@+id/navigation_home"
         android:name="com.dicoding.capstone.ui.menu.MenuFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_menu" />
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.dicoding.capstone.ui.pasien.PasienFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_pasien" />
 
     <fragment
         android:id="@+id/navigation_profile"
