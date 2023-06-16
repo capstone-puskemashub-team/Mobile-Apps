@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Capstone</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_home">Menu</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Pasien</string>
+    <string name="desc">view and edit profile</string>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="search">Cari</string>
+    <string name="daftarpasien">Daftar Pasien</string>
+    <string name="nomor">Nomor</string>
+    <string name="Nomor">nomor</string>
+    <string name="nama">Nama</string>
+    <string name="tgl">tanggal</string>
+    <string name="todo">Todo</string>
+    <string name="heroes_name">Name</string>
+    <string name="welcome">Selamat Datang,</string>
+    <string name="Logout">LogOut</string>
+    <string name="change">Change Password</string>
+    <string name="mail">Message</string>
+    <string name="about">About</string>
+</resources>
